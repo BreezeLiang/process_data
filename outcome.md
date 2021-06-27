@@ -1,5 +1,5 @@
 ### *1.不同大小数据时的set/get性能*
-> 说明：使用命令
+> 说明：<font color="gree">使用命令</font>
 ```
 redis-benchmark -h 127.0.0.1 -p 6379 -t set,get -q
 ```
@@ -41,7 +41,7 @@ SET: 100401.61 requests per second, p50=0.255 msec
 GET: 94073.38 requests per second, p50=0.263 msec
 ```
 ### 2.计算平均每个key的空间大小
-> 插入key前info memory (已用空间1.07M)
+> 插入key前info memory <font color="yellow">(已用空间1.07M)</fon>
 ```
 # Memory
 used_memory:1117360
@@ -86,7 +86,7 @@ active_defrag_running:0
 lazyfree_pending_objects:0
 lazyfreed_objects:0
 ```
-> 插入key后info memory (已用空间10.84M)
+> 插入key后info memory <font color="yellow">(已用空间10.84M)</font>
 ```
 # Memory
 used_memory:11371504
@@ -131,5 +131,5 @@ active_defrag_running:0
 lazyfree_pending_objects:0
 lazyfreed_objects:0
 ```
-> 计算结果如下：  
+> 计算结果<font color="gree">如下</font>：  
 > + key总数为50250 占用空间10.84-1.07=9.77MB 平均每个key占203.87B
